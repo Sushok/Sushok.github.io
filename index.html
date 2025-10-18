@@ -3,10 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моє Портфоліо</title>
+    <title>Sushok - Моє Портфоліо</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>Привіт! Це мій майбутній сайт-портфоліо.</h1>
-    <p>Скоро тут з'являться мої найкращі проєкти.</p>
+
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#hero" class="logo">Sushok</a>
+                <ul>
+                    <li><a href="#about">Про мене</a></li>
+                    <li><a href="#portfolio">Портфоліо</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="https://via.placeholder.com/150" alt="Фото Sushok" class="profile-pic">
+                <h1>Привіт, я <span class="highlight">Sushok</span>.</h1>
+                <p class="tagline">Я — [Ваша спеціалізація, наприклад: Веб-розробник | UI/UX Дизайнер | Контент-Креатор].</p>
+                <a href="#portfolio" class="btn">Переглянути мої роботи</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-me">
+        <div class="container">
+            <h2>Про мене</h2>
+            <p>
+                Привіт! Мене звати Sushok, і я захоплений [Ваша галузь]. Мій шлях у [галузь] розпочався [Рік або короткий опис, наприклад: 3 роки тому з першого рядка коду/з дитинства з малювання].
+            </p>
+            <p>
+                Я спеціалізуюся на [Основні навички, наприклад: розробці адаптивних веб-сайтів, створенні візуально привабливих інтерфейсів, написанні чистого та ефективного коду]. Моя мета — створювати рішення, які не лише виглядають чудово, але й ефективно вирішують поставлені завдання.
+            </p>
+            <p>
+                Завжди відкритий для нових викликів та співпраці. Давайте створимо щось чудове разом!
+            </p>
+            <div class="skills">
+                <h3>Мої навички</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>[Навичка 3, наприклад: React/Vue/Angular]</li>
+                    <li>[Навичка 4, наприклад: Figma/Photoshop/Illustrator]</li>
+                    <li>[Навичка 5, наприклад: Node.js/Python/PHP]</li>
+                    <li>Адаптивний дизайн</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Мої роботи</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Проєкт 1">
+                    <h3>Назва Проєкту 1</h3>
+                    <p>Короткий опис проєкту, використані технології.</p>
+                    <a href="#" target="_blank" class="btn-small">Детальніше</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Проєкт 2">
+                    <h3>Назва Проєкту 2</h3>
+                    <p>Короткий опис проєкту, використані технології.</p>
+                    <a href="#" target="_blank" class="btn-small">Детальніше</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Проєкт 3">
+                    <h3>Назва Проєкту 3</h3>
+                    <p>Короткий опис проєкту, використані технології.</p>
+                    <a href="#" target="_blank" class="btn-small">Детальніше</a>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Зв'яжіться зі мною</h2>
+            <p>Зацікавлені у співпраці або просто хочете сказати "Привіт"? Напишіть мені!</p>
+            <div class="contact-links">
+                <a href="mailto:your-email@example.com" class="contact-icon"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Sushok" target="_blank" class="contact-icon"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Sushok. Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
